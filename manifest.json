@@ -1,0 +1,27 @@
+{
+  "vendor": "epayco",
+  "name": "epayco-app",
+  "version": "1.0.0",
+  "title": "ePayco Payment Integration",
+  "description": "Integración de pagos con ePayco para VTEX",
+  "policies": [
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "[apify.epayco.io](https://apify.epayco.io)",
+        "path": "*"
+      }
+    }
+  ],
+  "mustUpdateAt": "2025-03-21",
+  "builders": {
+    "messages": "1.x",
+    "react": "3.x",
+    "docs": "0.x",
+    "pages": "1.x"
+  },
+  "scripts": {
+    "postreleasy": "vtex publish --public"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}
